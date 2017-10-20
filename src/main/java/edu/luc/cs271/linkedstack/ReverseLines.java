@@ -1,13 +1,11 @@
 package edu.luc.cs271.linkedstack;
 
 import java.util.Scanner;
- 
+
 public class ReverseLines {
 
   public static void main(String[] args) {
     // TODO read successive input lines until EOF, then print out in reverse order
-
-
 
     final Scanner input = new Scanner(System.in);
     String line;
@@ -19,7 +17,7 @@ public class ReverseLines {
       stack.push(line);
       line = input.next();
     }
-    while (stack.peek() != null){
+    while (stack.peek() != null) {
       System.out.println(stack.pop());
     }
   }
